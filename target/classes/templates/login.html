@@ -12,7 +12,7 @@
 		<div class="card bg-light">
 			<article class="card-body mx-auto" style="max-width: 400px;">
 				<h4 class="card-title mt-3 text-center">Create Account</h4>
-				<form action="#" th:action="@{/registration}" th:object="${user}" method="post">
+				<form action="#" th:action="@{/login}" th:object="${user}" method="post">
 				<div class="form-group input-group">
 					<div class="input-group-prepend">
 						<span class="input-group-text"> <i class="fa fa-user"></i>
@@ -22,26 +22,16 @@
 				</div> <!-- form-group// -->
 				<div class="form-group input-group">
 					<div class="input-group-prepend">
-						<span class="input-group-text"> <i class="fa fa-building"></i>
-						</span>
-					</div>
-					<select class="form-control" name="dropRole" id="dropRole" th:field="*{roleid}">
-						<option value="0"> Select Role</option>
-						<option th:each="role : ${roles}" th:value="${role.roleid}" th:text="${role.roledesc}"></option>
-					</select>
-				</div> <!-- form-group end.// -->
-				<div class="form-group input-group">
-					<div class="input-group-prepend">
 						<span class="input-group-text"> <i class="fa fa-lock"></i>
 						</span>
 					</div>
-					<input class="form-control" placeholder="Create password" type="password" th:field="*{pwd}">
+					<input class="form-control" placeholder="Password" type="password" th:field="*{pwd}">
 				</div> <!-- form-group// -->
 				<div class="form-group">
-					<button type="submit" class="btn btn-primary btn-block"> Create Account
+					<button type="submit" class="btn btn-primary btn-block"> Login
 					</button>
 				</div> <!-- form-group// -->
-				<p class="text-center">Have an account? <a th:href="@{/login}">Log In</a> S</p>
+				<p class="text-center">Have an account? <a th:href="@{/registration}">Registration</a> S</p>
 				</form>
 			</article>
 		</div> <!-- card.// -->

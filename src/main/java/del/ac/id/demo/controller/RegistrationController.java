@@ -1,4 +1,4 @@
-package del.ac.id.id.demo.controller;
+package del.ac.id.demo.controller;
 
 import java.util.List;
 import org.springframework.ui.Model;
