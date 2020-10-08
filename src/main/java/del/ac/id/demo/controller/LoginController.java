@@ -43,6 +43,6 @@ public class LoginController {
 				url="index";
 			}
 		}
-		return new ModelAndView ("redirect:/"+url);
+		return new ModelAndView("redirect:/" + url);
 	}
 }

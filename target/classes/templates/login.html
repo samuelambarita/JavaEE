@@ -11,7 +11,7 @@
 	<body>
 		<div class="card bg-light">
 			<article class="card-body mx-auto" style="max-width: 400px;">
-				<h4 class="card-title mt-3 text-center">Create Account</h4>
+				<h4 class="card-title mt-3 text-center">Login</h4>
 				<form action="#" th:action="@{/login}" th:object="${user}" method="post">
 				<div class="form-group input-group">
 					<div class="input-group-prepend">
@@ -31,7 +31,7 @@
 					<button type="submit" class="btn btn-primary btn-block"> Login
 					</button>
 				</div> <!-- form-group// -->
-				<p class="text-center">Have an account? <a th:href="@{/registration}">Registration</a> S</p>
+				<p class="text-center">Have an account? <a th:href="@{/registration}">Registration</a> </p>
 				</form>
 			</article>
 		</div> <!-- card.// -->

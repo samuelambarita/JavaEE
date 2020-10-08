@@ -1,0 +1,17 @@
+Kelompok 5: 
+- Samuel Ambarita (11318005)
+- Agnes Gultom (11318062)
+
+
+SQL Syntax: 
+create database db_happytravelling;
+use db_happytravelling;
+create table t_user(username varchar(50), pwd varchar(50), roleid int);
+create table t_role(roleid int, roledesc varchar(50));
+create table t_login(username varchar(50), roleid int, lastlogin datetime, isactive
+tinyint(1));
+insert into t_role values(1, ‘Admin’);
+insert into t_role values(2, ‘Non-admin’);
+
+
+Link Youtube : https://youtu.be/m9r97EhaORk

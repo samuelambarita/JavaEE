@@ -37,13 +37,13 @@ public class RegistrationController {
 		return mv;
 	}
 	@RequestMapping(value="/registration", method = RequestMethod.POST)
-	public String registrationSubmit(@ModelAttribute User user, BindingResult bindingResult, Model model) {
+	public ModelAndView registrationSubmit(@ModelAttribute User user, BindingResult bindingResult, Model model) {
 		if (bindingResult.hasErrors()) {
 			System.out.println("Error");
 		}
 		model.addAttribute("user", user);
 		userRepository.save(user);
 		
-		return "redirect:login";
+		return new ModelAndView ("login");
 	}
 }
